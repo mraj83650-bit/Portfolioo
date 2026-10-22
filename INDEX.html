@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PLACEHOLDER - Personal Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+
+
+<body>
+
+    <!-- Header -->
+    <header class="hero">
+        <div class="hero-content">
+            <button id="themeBtn">🌙 Night Mode</button>
+            <h1>Mayank Raj</h1>
+            <p>B.Tech Computer Science Student</p>
+
+            <a href="#about" class="hero-button">Explore My Profile</a>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+
+            <h2>About Me</h2>
+
+            <p>
+                Hello! I am Mayank Raj, a Computer Science student at JECRC University,
+                Jaipur. I am interested in software development, full-stack development,
+                and data analytics. I enjoy learning new technologies and building
+                practical projects.
+            </p>
+
+            <p>
+                Location: PLACEHOLDER
+            </p>
+
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+
+            <h2>Skills</h2>
+
+            <ul class="skills-list">
+
+                <li>C</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript - PLACEHOLDER</li>
+                <li>React - PLACEHOLDER</li>
+                <li>Node.js - PLACEHOLDER</li>
+                <li>SQL - PLACEHOLDER</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+
+            <h2>Projects</h2>
+
+
+            <div class="project">
+
+                <h3>PLACEHOLDER Project 1</h3>
+
+                <p>
+                    PLACEHOLDER - Add a short description of your project here.
+                </p>
+
+                <a href="PLACEHOLDER" target="_blank">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>PLACEHOLDER Project 2</h3>
+
+                <p>
+                    PLACEHOLDER - Add a short description of your project here.
+                </p>
+
+```css
+/* =================================
+   GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #eef4ff, #f5f3ff);
+    color: #26324a;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+    color: white;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    animation: fadeIn 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   HERO BUTTON HOVER
+================================= */
+
+.hero-button {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: white;
+    color: #2563eb;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: all 0.4s ease;
+}
+
+.hero-button:hover {
+    background: #7c3aed;
+    color: white;
+
+    transform: translateY(-6px) scale(1.08);
+
+    box-shadow: 0 10px 30px rgba(124, 58, 237, 0.5);
+}
+
+
+/* =================================
+   MAIN
+================================= */
+
+main {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+
+/* =================================
+   SECTION HOVER EFFECT
+================================= */
+
+.section {
+    background: white;
+
+    margin-bottom: 30px;
+    padding: 35px;
+
+    border-radius: 18px;
+
+    border: 2px solid transparent;
+
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.10);
+
+    transition: all 0.4s ease;
+}
+
+
+/* Main hover effect */
+
+.section:hover {
+    transform: translateY(-10px);
+
+    border-color: #7c3aed;
+
+    box-shadow:
+        0 15px 35px rgba(124, 58, 237, 0.25);
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f5f3ff
+    );
+}
+
+
+.section h2 {
+    color: #2563eb;
+
+    margin-bottom: 18px;
+
+    border-bottom: 2px solid #93c5fd;
+
+    padding-bottom: 10px;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Heading changes on section hover */
+
+.section:hover h2 {
+    color: #7c3aed;
+    letter-spacing: 1px;
+}
+
+
+/* =================================
+   SKILLS
+================================= */
+
+.skills-list {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    padding: 0;
+}
+
+
+.skills-list li {
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #ede9fe
+    );
+
+    color: #3730a3;
+
+    padding: 10px 18px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    border: 1px solid #c7d2fe;
+
+    transition: all 0.35s ease;
+}
+
+
+/* Skill hover */
+
+.skills-list li:hover {
+    transform: translateY(-8px) scale(1.08);
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color: white;
+
+    border-color: transparent;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.4);
+}
+
+
+/* =================================
+   PROJECT CARDS
+================================= */
+
+.project {
+    padding: 22px;
+
+    margin-bottom: 20px;
+
+    background: #f5f3ff;
+
+    border-left: 5px solid #7c3aed;
+
+    border-radius: 10px;
+
+    transition: all 0.4s ease;
+}
+
+
+/* Project hover */
+
+.project:hover {
+    transform: translateY(-8px) scale(1.02);
+
+    background: white;
+
+    border-left-color: #2563eb;
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.25);
+}
+
+
+.project h3 {
+    color: #5b21b6;
+
+    margin-bottom: 8px;
+
+    transition: color 0.3s ease;
+}
+
+
+.project:hover h3 {
+    color: #2563eb;
+}
+
+
+/* =================================
+   PROJECT LINK HOVER
+================================= */
+
+.project a {
+    display: inline-block;
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+
+.project a:hover {
+    color: #7c3aed;
+
+    transform: translateX(8px);
+
+    text-shadow:
+        0 0 8px rgba(124, 58, 237, 0.3);
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    text-align: center;
+
+    background: #172554;
+
+    color: white;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    transition: background 0.4s ease;
+}
+
+
+footer:hover {
+    background: #312e81;
+}
+
+
+/* =================================
+   ANIMATION
+================================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section {
+        padding: 25px;
+    }
+
+}
+```
+                   View Project →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Mayank Raj. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
